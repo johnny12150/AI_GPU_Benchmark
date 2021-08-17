@@ -1,0 +1,92 @@
+>>   AI-Benchmark-v.0.1.2
+>>   Let the AI Games begin..
+
+*  TF Version: 1.15.5
+*  Platform: Linux-5.4.0-62-generic-x86_64-with-debian-buster-sid
+*  CPU: N/A
+*  CPU RAM: 126 GB
+
+The benchmark is running...
+The tests might take up to 20 minutes
+Please don't interrupt the script
+##### Config Done
+
+1/19. MobileNet-V2
+
+1.1 - training  | batch=50, size=224x224: 1141 ± 9 ms
+
+2/19. Inception-V3
+
+2.1 - training  | batch=20, size=346x346: 2526 ± 15 ms
+
+3/19. Inception-V4
+
+3.1 - training  | batch=10, size=346x346: 2335 ± 10 ms
+
+4/19. Inception-ResNet-V2
+
+4.1 - training  | batch=8, size=346x346: 2260 ± 11 ms
+
+5/19. ResNet-V2-50
+
+5.1 - training  | batch=10, size=346x346: 1599 ± 14 ms
+
+6/19. ResNet-V2-152
+
+6.1 - training  | batch=10, size=256x256: 2391 ± 19 ms
+
+7/19. VGG-16
+
+7.1 - training  | batch=2, size=224x224: 1687 ± 9 ms
+
+8/19. SRCNN 9-5-5
+
+8.1 - training  | batch=10, size=512x512: 8243 ± 22 ms
+
+9/19. VGG-19 Super-Res
+
+9.1 - training  | batch=10, size=224x224: 6916 ± 20 ms
+
+10/19. ResNet-SRGAN
+
+10.1 - training  | batch=5, size=512x512: 3268 ± 35 ms
+
+11/19. ResNet-DPED
+
+11.1 - training  | batch=15, size=128x128: 4256 ± 25 ms
+
+12/19. U-Net
+
+12.1 - training  | batch=4, size=256x256: 3425 ± 15 ms
+
+13/19. Nvidia-SPADE
+
+13.1 - training  | batch=1, size=128x128: 1231 ± 8 ms
+
+14/19. ICNet
+
+14.1 - training  | batch=10, size=1024x1536: 2389 ± 27 ms
+
+15/19. PSPNet
+
+15.1 - training  | batch=1, size=512x512: 2057 ± 14 ms
+
+16/19. DeepLab
+
+16.1 - training  | batch=1, size=384x384: 1649 ± 17 ms
+
+17/19. Pixel-RNN
+
+17.1 - training  | batch=10, size=64x64: 878 ± 5 ms
+
+18/19. LSTM-Sentiment
+
+18.1 - training  | batch=10, size=1024x300: 4862 ± 15 ms
+
+19/19. GNMT-Translation
+
+
+Device Training Score: 1205
+
+For more information and results, please visit http://ai-benchmark.com/alpha
+
