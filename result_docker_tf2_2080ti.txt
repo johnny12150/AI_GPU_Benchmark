@@ -1,0 +1,194 @@
+(base) wade@wade-System-Product-Name:~/Documents/wade/ai_benchmark$ sudo docker run --gpus all -it johnny12150/ai-benchmark:v2.6
+
+________                               _______________
+___  __/__________________________________  ____/__  /________      __
+__  /  _  _ \_  __ \_  ___/  __ \_  ___/_  /_   __  /_  __ \_ | /| / /
+_  /   /  __/  / / /(__  )/ /_/ /  /   _  __/   _  / / /_/ /_ |/ |/ /
+/_/    \___//_/ /_//____/ \____//_/    /_/      /_/  \____/____/|__/
+
+
+WARNING: You are running this container as root, which can cause new files in
+mounted volumes to be created as the root user on your host machine.
+
+To avoid this, run the container by specifying your user's userid:
+
+$ docker run -u $(id -u):$(id -g) args...
+
+root@665327ff4d0e:/ai-benchmark# docker ls
+bash: docker: command not found
+root@665327ff4d0e:/ai-benchmark# docker container  ls
+bash: docker: command not found
+root@665327ff4d0e:/ai-benchmark# docker container ls
+bash: docker: command not found
+root@665327ff4d0e:/ai-benchmark# ^C
+root@665327ff4d0e:/ai-benchmark# exit
+(base) wade@wade-System-Product-Name:~/Documents/wade/ai_benchmark$ sudo docker run --gpus all -it johnny12150/ai-benchmark:v2.6 python main.py
+
+>>   AI-Benchmark-v.0.1.2
+>>   Let the AI Games begin..
+
+*  TF Version: 2.6.0
+*  Platform: Linux-5.8.0-50-generic-x86_64-with-Ubuntu-18.04-bionic
+*  CPU: N/A
+*  CPU RAM: 63 GB
+*  GPU/0: GeForce RTX 2080 Ti
+*  GPU RAM: 9.3 GB
+*  CUDA Version: 11.2
+*  CUDA Build: V11.2.152
+
+The benchmark is running...
+The tests might take up to 20 minutes
+Please don't interrupt the script
+##### Config Done
+
+1/19. MobileNet-V2
+
+1.1 - inference | batch=50, size=224x224: 33.9 ± 4.1 ms
+^CTraceback (most recent call last):
+  File "main.py", line 15, in <module>
+    main()
+  File "main.py", line 9, in main
+    results = benchmark.run(precision="high")
+  File "/ai-benchmark/ai_benchmark/__init__.py", line 64, in run
+    use_CPU=self.use_CPU, precision=precision, _type="full", start_dir=self.cwd, batch_mul=batch_mul)
+  File "/ai-benchmark/ai_benchmark/utils.py", line 646, in run_tests
+    sess.run(train_step, feed_dict={input_: data, target_: target})
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 968, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1191, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1369, in _do_run
+    run_metadata)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1375, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1360, in _run_fn
+    target_list, run_metadata)
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/client/session.py", line 1453, in _call_tf_sessionrun
+    run_metadata)
+KeyboardInterrupt
+(base) wade@wade-System-Product-Name:~/Documents/wade/ai_benchmark$ clear
+(base) wade@wade-System-Product-Name:~/Documents/wade/ai_benchmark$ sudo docker run --gpus all -it johnny12150/ai-benchmark:v2.6 python main.py
+
+>>   AI-Benchmark-v.0.1.2
+>>   Let the AI Games begin..
+
+*  TF Version: 2.6.0
+*  Platform: Linux-5.8.0-50-generic-x86_64-with-Ubuntu-18.04-bionic
+*  CPU: N/A
+*  CPU RAM: 63 GB
+*  GPU/0: GeForce RTX 2080 Ti
+*  GPU RAM: 9.3 GB
+*  CUDA Version: 11.2
+*  CUDA Build: V11.2.152
+
+The benchmark is running...
+The tests might take up to 20 minutes
+Please don't interrupt the script
+##### Config Done
+
+1/19. MobileNet-V2
+
+1.1 - inference | batch=50, size=224x224: 30.6 ± 2.5 ms
+1.2 - training  | batch=50, size=224x224: 174 ± 4 ms
+
+2/19. Inception-V3
+
+2.1 - inference | batch=20, size=346x346: 52.5 ± 4.3 ms
+2.2 - training  | batch=20, size=346x346: 148 ± 4 ms
+
+3/19. Inception-V4
+
+3.1 - inference | batch=10, size=346x346: 41.2 ± 0.5 ms
+3.2 - training  | batch=10, size=346x346: 156.7 ± 0.7 ms
+
+4/19. Inception-ResNet-V2
+
+4.1 - inference | batch=10, size=346x346: 54.5 ± 0.6 ms
+4.2 - training  | batch=8, size=346x346: 167.8 ± 0.7 ms
+
+5/19. ResNet-V2-50
+
+5.1 - inference | batch=10, size=346x346: 32.2 ± 1.5 ms
+5.2 - training  | batch=10, size=346x346: 93.6 ± 0.6 ms
+
+6/19. ResNet-V2-152
+
+6.1 - inference | batch=10, size=256x256: 42.1 ± 0.4 ms
+6.2 - training  | batch=10, size=256x256: 142.7 ± 0.6 ms
+
+7/19. VGG-16
+
+7.1 - inference | batch=20, size=224x224: 68.7 ± 0.6 ms
+7.2 - training  | batch=2, size=224x224: 124.6 ± 0.6 ms
+
+8/19. SRCNN 9-5-5
+
+8.1 - inference | batch=10, size=512x512: 60.1 ± 2.0 ms
+8.2 - inference | batch=1, size=1536x1536: 64.0 ± 2.6 ms
+8.3 - training  | batch=10, size=512x512: 147 ± 1 ms
+
+9/19. VGG-19 Super-Res
+
+9.1 - inference | batch=10, size=256x256: 68.6 ± 3.2 ms
+9.2 - inference | batch=1, size=1024x1024: 87.3 ± 0.8 ms
+9.3 - training  | batch=10, size=224x224: 179.1 ± 0.8 ms
+
+10/19. ResNet-SRGAN
+
+10.1 - inference | batch=10, size=512x512: 85.5 ± 2.5 ms
+10.2 - inference | batch=1, size=1536x1536: 71.5 ± 2.7 ms
+10.3 - training  | batch=5, size=512x512: 120.6 ± 0.8 ms
+
+11/19. ResNet-DPED
+
+11.1 - inference | batch=10, size=256x256: 86.2 ± 0.5 ms
+11.2 - inference | batch=1, size=1024x1024: 147.3 ± 0.7 ms
+11.3 - training  | batch=15, size=128x128: 139.9 ± 0.5 ms
+
+12/19. U-Net
+
+12.1 - inference | batch=4, size=512x512: 161.1 ± 0.6 ms
+12.2 - inference | batch=1, size=1024x1024: 160.4 ± 0.6 ms
+12.3 - training  | batch=4, size=256x256: 167.1 ± 0.5 ms
+
+13/19. Nvidia-SPADE
+
+13.1 - inference | batch=5, size=128x128: 69.9 ± 0.4 ms
+13.2 - training  | batch=1, size=128x128: 114.5 ± 0.6 ms
+
+14/19. ICNet
+
+14.1 - inference | batch=5, size=1024x1536: 102 ± 14 ms
+14.2 - training  | batch=10, size=1024x1536: 331 ± 4 ms
+
+15/19. PSPNet
+
+15.1 - inference | batch=5, size=720x720: 289 ± 3 ms
+15.2 - training  | batch=1, size=512x512: 116.3 ± 0.8 ms
+
+16/19. DeepLab
+
+16.1 - inference | batch=2, size=512x512: 83.9 ± 0.4 ms
+16.2 - training  | batch=1, size=384x384: 100.0 ± 0.4 ms
+
+17/19. Pixel-RNN
+
+17.1 - inference | batch=50, size=64x64: 290 ± 12 ms
+17.2 - training  | batch=10, size=64x64: 1495 ± 25 ms
+
+18/19. LSTM-Sentiment
+
+18.1 - inference | batch=100, size=1024x300: 348 ± 6 ms
+18.2 - training  | batch=10, size=1024x300: 725 ± 25 ms
+
+19/19. GNMT-Translation
+
+19.1 - inference | batch=1, size=1x20: 126 ± 19 ms
+
+Device Inference Score: 16192
+Device Training Score: 16498
+Device AI Score: 32690
+
+For more information and results, please visit http://ai-benchmark.com/alpha
+
+<ai_benchmark.utils.PublicResults object at 0x7f2796079d68>
