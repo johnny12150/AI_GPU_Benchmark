@@ -1,0 +1,121 @@
+>>   AI-Benchmark-v.0.1.2
+>>   Let the AI Games begin..
+
+*  TF Version: 1.14.0
+*  Platform: Windows-10-10.0.21376-SP0
+*  CPU: N/A
+*  CPU RAM: 64 GB
+*  GPU/0: NVIDIA GeForce RTX 2080 Ti
+*  GPU RAM: 9.3 GB
+*  CUDA Version: 10.2
+*  CUDA Build: V10.2.89
+
+The benchmark is running...
+The tests might take up to 20 minutes
+Please don't interrupt the script
+##### Config Done
+
+1/19. MobileNet-V2
+
+1.1 - inference | batch=50, size=224x224: 36.5 ± 7.3 ms
+1.2 - training  | batch=50, size=224x224: 196 ± 18 ms
+
+2/19. Inception-V3
+
+2.1 - inference | batch=20, size=346x346: 68.7 ± 24.4 ms
+2.2 - training  | batch=20, size=346x346: 188 ± 52 ms
+
+3/19. Inception-V4
+
+3.1 - inference | batch=10, size=346x346: 58.3 ± 16.9 ms
+3.2 - training  | batch=10, size=346x346: 199 ± 55 ms
+
+4/19. Inception-ResNet-V2
+
+4.1 - inference | batch=10, size=346x346: 71.9 ± 34.2 ms
+4.2 - training  | batch=8, size=346x346: 222 ± 58 ms
+
+5/19. ResNet-V2-50
+
+5.1 - inference | batch=10, size=346x346: 47.4 ± 34.5 ms
+5.2 - training  | batch=10, size=346x346: 123 ± 46 ms
+
+6/19. ResNet-V2-152
+
+6.1 - inference | batch=10, size=256x256: 53.8 ± 31.6 ms
+6.2 - training  | batch=10, size=256x256: 172 ± 30 ms
+
+7/19. VGG-16
+
+7.1 - inference | batch=20, size=224x224: 86.5 ± 24.7 ms
+7.2 - training  | batch=2, size=224x224: 131 ± 6 ms
+
+8/19. SRCNN 9-5-5
+
+8.1 - inference | batch=10, size=512x512: 80.8 ± 19.9 ms
+8.2 - inference | batch=1, size=1536x1536: 57.8 ± 9.8 ms
+8.3 - training  | batch=10, size=512x512: 209 ± 47 ms
+
+9/19. VGG-19 Super-Res
+
+9.1 - inference | batch=10, size=256x256: 105 ± 48 ms
+9.2 - inference | batch=1, size=1024x1024: 145 ± 29 ms
+9.3 - training  | batch=10, size=224x224: 249 ± 10 ms
+
+10/19. ResNet-SRGAN
+
+10.1 - inference | batch=10, size=512x512: 99.4 ± 13.8 ms
+10.2 - inference | batch=1, size=1536x1536: 86.5 ± 39.1 ms
+10.3 - training  | batch=5, size=512x512: 146 ± 46 ms
+
+11/19. ResNet-DPED
+
+11.1 - inference | batch=10, size=256x256: 103 ± 38 ms
+11.2 - inference | batch=1, size=1024x1024: 193 ± 46 ms
+11.3 - training  | batch=15, size=128x128: 168 ± 31 ms
+
+12/19. U-Net
+
+12.1 - inference | batch=4, size=512x512: 166 ± 12 ms
+12.2 - inference | batch=1, size=1024x1024: 165 ± 8 ms
+12.3 - training  | batch=4, size=256x256: 215 ± 72 ms
+
+13/19. Nvidia-SPADE
+
+13.1 - inference | batch=5, size=128x128: 77.5 ± 9.4 ms
+13.2 - training  | batch=1, size=128x128: 127 ± 17 ms
+
+14/19. ICNet
+
+14.1 - inference | batch=5, size=1024x1536: 123 ± 30 ms
+14.2 - training  | batch=10, size=1024x1536: 327 ± 53 ms
+
+15/19. PSPNet
+
+15.1 - inference | batch=5, size=720x720: 318 ± 38 ms
+15.2 - training  | batch=1, size=512x512: 146 ± 51 ms
+
+16/19. DeepLab
+
+16.1 - inference | batch=2, size=512x512: 94.8 ± 23.6 ms
+16.2 - training  | batch=1, size=384x384: 132 ± 54 ms
+
+17/19. Pixel-RNN
+
+17.1 - inference | batch=50, size=64x64: 852 ± 76 ms
+17.2 - training  | batch=10, size=64x64: 1891 ± 138 ms
+
+18/19. LSTM-Sentiment
+
+18.1 - inference | batch=100, size=1024x300: 579 ± 96 ms
+18.2 - training  | batch=10, size=1024x300: 953 ± 102 ms
+
+19/19. GNMT-Translation
+
+19.1 - inference | batch=1, size=1x20: 187 ± 56 ms
+
+Device Inference Score: 12404
+Device Training Score: 13365
+Device AI Score: 25769
+
+For more information and results, please visit http://ai-benchmark.com/alpha
